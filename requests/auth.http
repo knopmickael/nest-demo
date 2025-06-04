@@ -1,4 +1,5 @@
 GET http://localhost:3000/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6Ik1pY2thZWwgS25vcCIsImVtYWlsIjoibWlja2FlbGtub3AyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzQ5MDcxNTg3LCJleHAiOjE3NDkwNzE2NDd9.JUeWwwjGmr0pBQr3eYKUOemzr5420dZSO0ducbbc-9Q
 
 ###
 POST http://localhost:3000/auth/register
@@ -6,6 +7,15 @@ Content-Type: application/json
 
 {
   "name": "Mickael Knop",
-  "email": "mickaelknop@example.com",
+  "email": "mickaelknop2@example.com",
+  "password": "mypass123"
+}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "mickaelknop2@example.com",
   "password": "mypass123"
 }
