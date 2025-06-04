@@ -1,0 +1,11 @@
+GET http://localhost:3000/auth/me
+
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "name": "Mickael Knop",
+  "email": "mickaelknop@example.com",
+  "password": "mypass123"
+}
